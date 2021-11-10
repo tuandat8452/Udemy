@@ -1,0 +1,22 @@
+footer {
+    padding: 2rem 0;
+    font-size: 0.8rem;
+    .footer-left {
+        img {
+            margin-right: 2rem;
+        }
+        span {
+            opacity: 0.7;
+        }
+    }
+    .footer-right {
+        a {
+            text-decoration: none;
+            color: #54a4b5;
+            margin-left: 2rem;
+            &:hover {
+                color: #003845 !important;
+            }
+        }
+    }
+}

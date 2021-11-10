@@ -1,0 +1,33 @@
+.header__left {
+    display: flex;
+    align-items: center;
+    a {
+        flex-grow: 1;
+    }
+    .categories {
+        flex-grow: 1;
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, .5);
+    }
+    @include search();
+}
+
+.header-right {
+    .nav-item {
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        padding: 0 .5rem;
+    }
+    .btn-login {
+        border: 1px solid #686f7a;
+        background-color: #fff;
+        opacity: 0.6;
+        color: #000;
+        font-weight: 600;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    @include button();
+}

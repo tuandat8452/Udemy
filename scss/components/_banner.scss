@@ -1,0 +1,44 @@
+.banner {
+    background-color: #29303b;
+    .nothing {
+        height: 10px;
+        background: linear-gradient(to right, #731c52, #e85152);
+    }
+    .icon {
+        color: $color-second;
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .personalized {
+        @include button();
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: $color-second;
+        padding: 2rem 0;
+        position: relative;
+        i {
+            font-size: 1.5rem;
+            display: block;
+        }
+        .fa-react {
+            padding-left: 8rem;
+        }
+        .fa-image {
+            padding-right: 8rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

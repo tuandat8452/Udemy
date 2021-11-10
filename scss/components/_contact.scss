@@ -1,0 +1,32 @@
+.contact {
+    padding: 2rem 0;
+    a {
+        font-size: 0.8rem;
+        color: #54a4b5;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        &:hover {
+            color: #003845 !important;
+        }
+    }
+    .color-text {
+        color: $blue-text !important;
+        font-weight: 700;
+    }
+    button {
+        padding: 0.2rem 0.5rem;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+        .language {
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 1rem;
+                margin-right: 3rem;
+            }
+        }
+    }
+}

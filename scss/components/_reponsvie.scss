@@ -1,0 +1,87 @@
+@media screen and (max-width:992px) {
+    header {
+        .nav-item:first-child,
+        .nav-item:nth-child(2) {
+            display: none;
+        }
+    }
+    .statistics {
+        text-align: center;
+        i {
+            display: none;
+        }
+    }
+    .business {
+        .item-left {
+            display: none;
+        }
+    }
+    .info {
+        text-align: center;
+        .item {
+            display: block;
+            text-align: center;
+            height: 13rem;
+            i {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .banner {
+        i {
+            display: none;
+        }
+        .personalized {
+            i {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        .categories {
+            display: none;
+        }
+    }
+    .students-thinking {
+        a {
+            display: block !important;
+            img {
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+        .item-bottom:first-child {
+            border-right: none !important;
+        }
+    }
+    footer {
+        .footer-right {
+            display: flex;
+            justify-self: start;
+            a {
+                margin: 1rem 2rem 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    header {
+        .input-group {
+            display: flex;
+            justify-content: flex-end;
+            input {
+                display: none !important;
+            }
+            i {
+                background-color: #f8f9fa!important;
+            }
+        }
+        .categories {
+            display: none;
+        }
+    }
+}

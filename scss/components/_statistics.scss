@@ -1,0 +1,23 @@
+.statistics {
+    background: linear-gradient(to right, #711b52, #e95152);
+    color: $color-second;
+    align-items: center;
+    padding: 1.2rem 0;
+    .item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        i {
+            font-size: 2.5rem;
+            padding: 0 1.5rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

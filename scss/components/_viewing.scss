@@ -1,0 +1,11 @@
+.students-viewing {
+    padding: 2rem 0;
+    h1 {
+        font-size: 1.5rem;
+        opacity: 0.8;
+    }
+    .owl-students {
+        @include itemCarousel();
+        @include positionBtn();
+    }
+}

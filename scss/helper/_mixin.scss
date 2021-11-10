@@ -1,0 +1,171 @@
+@mixin search() {
+    form {
+        flex-grow: 5;
+        .input-group {
+            border: 1px solid transparent;
+            border-radius: 2px;
+        }
+        .input-group input {
+            border: transparent;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .input-group i {
+            padding: 10px;
+            background-color: $color-second;
+            color: $color-primary;
+            transition: 0.5s;
+            border: transparent;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+            &:hover {
+                background-color: $color-primary;
+                color: $color-second;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@mixin btnCarousel() {
+    .owl-nav button {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid transparent;
+        border-radius: 50% !important;
+        background: $color-second !important;
+        box-shadow: 0 2px 4px 1px rgba(20, 23, 28, .15);
+        position: absolute;
+        span {
+            line-height: 0.7;
+            font-size: 2.5rem;
+            color: $blue-text;
+        }
+    }
+}
+
+@mixin itemCarousel() {
+    .item {
+        border: 1px solid rgba(20, 23, 28, .1);
+        box-shadow: 0 2px 4px 1px rgba(20, 23, 28, .15);
+        .intro {
+            padding: 1rem 1.2rem 2rem 1.2rem;
+        }
+        h1 {
+            font-size: 1rem;
+            color: $color-text;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5rem;
+        }
+        p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            color: $color-text;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .raiting {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            i {
+                color: #f4c150;
+            }
+        }
+        .raiting span {
+            color: #505763;
+            font-weight: 700;
+        }
+        .raiting span:last-child {
+            color: $color-text !important;
+            opacity: 0.5;
+            font-weight: 500;
+        }
+        .money {
+            color: $color-text;
+            text-align: right;
+        }
+        .money del {
+            opacity: 0.8;
+            font-size: 0.8rem;
+        }
+        .money span {
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        .seller {
+            font-size: 0.6rem;
+            padding: 0.2rem 0.5rem;
+            color: $color-text;
+            background-color: #f4c150;
+            position: absolute;
+            top: 5%;
+            left: 0;
+        }
+        .seller::after {
+            content: "";
+            border: 10px solid;
+            border-color: transparent transparent transparent #f4c150;
+            position: absolute;
+            top: 0;
+            left: 99%;
+        }
+        &:hover {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+
+@mixin positionBtn() {
+    @include btnCarousel();
+    .owl-nav .owl-prev {
+        top: 35%;
+        left: -3%;
+        z-index: 5;
+        &:hover {
+            background: $color-second;
+            color: #085c70 !important;
+            box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+        }
+    }
+    @include btnCarousel();
+    .owl-nav .owl-next {
+        top: 35%;
+        right: -3%;
+        z-index: 5;
+        &:hover {
+            background: $color-second;
+            color: #085c70 !important;
+            box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+        }
+    }
+    .owl-prev:focus,
+    .owl-next:focus {
+        outline: none;
+    }
+}
+
+@mixin button() {
+    .btn {
+        border-radius: 2px !important;
+    }
+    .btn-danger {
+        &:hover {
+            background-color: rgb(153, 35, 55);
+        }
+    }
+}

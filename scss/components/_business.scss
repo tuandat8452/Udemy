@@ -1,0 +1,46 @@
+.business {
+    padding: 2rem 0;
+    .item-left {
+        background-color: #f7f8fa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .item-right {
+        .nav a {
+            color: $color-text;
+            padding: 0.5rem 0.8rem !important;
+            &:hover {
+                color: #003845;
+            }
+        }
+        .nav-link {
+            border: none;
+            position: relative;
+        }
+        .nav-link::before {
+            content: "";
+            width: 0;
+            height: 5px;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            background: $blue-text;
+        }
+        .nav-link.active::before {
+            width: 100%;
+        }
+        .owl-business {
+            margin-top: 2rem;
+        }
+        @include positionBtn();
+        @include itemCarousel();
+    }
+}

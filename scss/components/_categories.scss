@@ -1,0 +1,25 @@
+.categories {
+    padding: 2rem 0;
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    a {
+        display: block;
+        color: $color-text;
+        text-decoration: none;
+    }
+    .item {
+        box-shadow: 0 2px 4px 1px rgba(20, 23, 28, .15);
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin-top: 1rem;
+        &:hover {
+            box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+        }
+        i {
+            margin-right: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+}

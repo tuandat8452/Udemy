@@ -1,0 +1,16 @@
+.carousel {
+  height: 500px;
+  position: relative;
+  @include search();
+  img {
+    width: 100%;
+    height: 500px;
+  }
+  .carousel__content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+  }
+}
